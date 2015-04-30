@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="03001" package="sgcarvalet.adam.com.sgcarvalet">
+<uses-sdk android:minSdkVersion="8" />
+
+
+<permission
+        android:name="sgcarvalet.adam.com.sgcarvalet.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="sgcarvalet.adam.com.sgcarvalet.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--<receiver-->
+        <!--android:name=".PassiveLocationChangedReceiver"-->
+        <!--android:enabled="true" />-->
+
+    <!--
+<permission
+        android:name="android.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+35:5D:B1:F4:F2:BC:F0:F4:FD:C5:E9:F1:65:B4:9F:3B:19:74:D1:6C;adam.com.mapapp
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="sgcarvalet.adam.com.sgcarvalet.permission.MAPS_RECEIVE" />
+    -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".adam.com.model.static_user"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Base.Theme.AppCompat.Light" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBJgO6YBIgr4YSt3yMqHGz2gIdomwEPqWY"/>
+        <!-- android:value="AIzaSyCqhb93ii0pAq7rRb023Xxfo_hCNfoKEqc" ORI KEY -->
+        <!--<activity android:name=".Maps" >-->
+        <!--</activity>-->
+        <activity android:name=".login"
+            android:label="@string/login"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ContentAll"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--<activity android:name=".History" >-->
+        <!--</activity>-->
+        <!--<activity android:name=".SettingUser" >-->
+        <!--</activity>-->
+        <activity android:name=".Register"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+        android:name=".NavHome"
+        android:label="@string/title_activity_nav_home"
+            android:screenOrientation="portrait">
+            </activity>
+
+        <activity
+            android:name=".MapsView"
+            android:label="@string/title_activity_nav_home"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+    </application>
+
+</manifest>

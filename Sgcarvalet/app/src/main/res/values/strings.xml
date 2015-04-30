@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sgcarvalet</string>
+    <string name="login">LOGIN</string>
+    <string name="hello_world">Hello</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nav_home">Sgcarvalet</string>
+    <string name="title_section1">HOME</string>
+    <string name="title_section2">MAP</string>
+    <string name="title_section3">HISTORY</string>
+    <string name="title_section4">PROFILE</string>
+    <string name="title_section5">QUIT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Action</string>
+
+</resources>
